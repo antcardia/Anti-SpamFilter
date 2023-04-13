@@ -7,9 +7,9 @@ public class AntiSpamFilterTest {
 
 	public static void isSpamTest() {
 		final String text1 = "Hola, ¿qué tal estás?";
-		final String text2 = "Nigeria Nigeria Nigeria Nigeria Nigeria nigeria NIGERIA NIGERIA";
-		final String text3 = "Sexo sex sexo sexo sex sex en Nigeria nigeria NIGERIA nigeria";
-		final String text4 = "¡Vaya, has ganado un millón un millón un millón un millón un millón!";
+		final String text2 = "NIGERIA NIGERIA";
+		final String text3 = "Hola que tal, me gusta mucho el sexo nocturno";
+		final String text4 = "¡Vaya, YOU'VE WON!";
 		if (AntiSpamFilter.isSpam(text1))
 			System.out.println("El texto " + text1 + " es spam");
 		else
