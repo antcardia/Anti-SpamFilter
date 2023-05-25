@@ -27,7 +27,7 @@ public class AntiSpamFilter {
 		int count = 0;
 		final List<String> word = Arrays.asList(words.split(" "));
 		for (final String sp : spam)
-			count += words.split(sp).length - 1;
+			count += words.split(sp, -1).length - 1;
 		final double porcentajeSpam = count / (double) word.size();
 		return porcentajeSpam > this.threshold;
 	}

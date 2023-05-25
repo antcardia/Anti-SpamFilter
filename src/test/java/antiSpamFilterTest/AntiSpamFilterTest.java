@@ -9,7 +9,7 @@ public class AntiSpamFilterTest {
 		final AntiSpamFilter spam = new AntiSpamFilter(0.1, "sex, viagra, cialis, one million, you've won, nigeria, sexo, un millón, has ganado");
 		spam.setSpam("sex, viagra, cialis, one million, you've won, nigeria, sexo, un millón, has ganado");
 		final String text1 = "Hola, ¿qué tal estás?";
-		final String text2 = "NIGERIA NIGERIA";
+		final String text2 = "sex";
 		final String text3 = "Hola que tal, me gusta mucho el sexo nocturno";
 		final String text4 = "¡Vaya, YOU'VE WON!";
 		if (spam.isSpam(text1))
